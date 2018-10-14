@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { pushRotate as Menu } from 'react-burger-menu';
-import { Icon } from 'react-icons-kit'
-import {square_add} from 'react-icons-kit/ikons/square_add'
+import ServerList from './components/menu/ServerList';
 
 import './App.css';
 
@@ -9,17 +7,11 @@ class App extends Component {
   render() {
     return (
       <div id="root-container">
-        <Menu
+        <ServerList
           pageWrapId={"main-content-wrapper"}
-          outerContainerId={"root-container"}
-          customCrossIcon={false} >
-          
-          <div id="side-menu-header">
-              <span id="side-menu-header-title">Schematiks</span>
-            
-              <Icon id="side-menu-header-add-icon" size={16} icon={square_add}/>
-          </div>
-        </Menu>
+          outerContainerId={"root-container"}>
+
+        </ServerList>
 
         <main id="main-content-wrapper">
 
