@@ -37,7 +37,6 @@
 
 /* Wrapper for item list */
 .bm-item-list {
-  
 }
 
 .bm-item-list > nav {
@@ -54,36 +53,40 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-
 #side-menu-header {
-  background-color: #375967;
-  color: #ffffff;
-  height: 40px;
+  position: relative;
+  height: 100px;
+  background-color: #2D3E50;
+  background-image: url('./schematiks-logo.png');
+  background-repeat: no-repeat;
+  background-size: 75% 50%;
+  background-position: center;
+  color: white;
 }
 
 #side-menu-header-title {
   height: 40px;
   line-height: 40px;
   margin-left: 10px;
+  font-weight: bolder;
 }
 
 #side-menu-header-add-icon {
-  float: right;
-  height: 40px;
-  line-height: 40px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 5px;
 }
 
 .server-list-item {
   line-height: 40px;
-  border-bottom: 1px solid #a7a7a7;
+}
+
+.server-list-item:hover {
+  background-color: #e5f9f7;
 }
 
 .server-list-item-title {
   margin-left: 10px;
-}
-
-.server-list-item-content {
-  margin-left: 10px;
+  font-size: smaller;
 }

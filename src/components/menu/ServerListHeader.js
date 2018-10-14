@@ -7,9 +7,12 @@ import './ServerList.css';
 class ServerListHeader extends Component {
   render () {
     return (
-      <div id="side-menu-header">
-        <span id="side-menu-header-title">{this.props.title}</span>
-        <Icon id="side-menu-header-add-icon" size={16} icon={square_add}/>
+      <div>
+        <div id="side-menu-header">
+          <div id="side-menu-header-add-icon">
+            <Icon size={16} icon={square_add} />
+          </div>
+        </div>
       </div>
     );
   }

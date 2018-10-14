@@ -6,17 +6,6 @@ import ServerListItem from './ServerListItem';
 import './ServerList.css';
 
 class ServerList extends Component {
-
-	constructor (props) {
-		super(props);
-		this.toggle = this.toggle.bind(this);
-		this.state = { isCollapsed: false };
-	}
-
-	toggle() {
-		this.setState({ isCollapsed: !this.state.isCollapsed });
-	}
-
 	render () {
 		return (
 			<Menu
@@ -25,12 +14,23 @@ class ServerList extends Component {
 				customCrossIcon={false} 
 				isOpen={true} >
 			
-				<ServerListHeader title={'Schematiks'} />
+				<ServerListHeader/>
 			
-				<ServerListItem />
-				<ServerListItem />
-				<ServerListItem />
-				<ServerListItem />
+				<ServerListItem title={'Servidor local'} />
+				<ServerListItem title={'Servidor de dev'}/>
+				<ServerListItem title={'Servidor de hml'}/>
+				<ServerListItem title={'Servidor de prod'}/>
+				<ServerListItem title={'Servidor local'} />
+				<ServerListItem title={'Servidor de dev'}/>
+				<ServerListItem title={'Servidor de hml'}/>
+				<ServerListItem title={'Servidor de prod'}/>
+				<ServerListItem title={'Servidor local'} />
+				<ServerListItem title={'Servidor de dev'}/>
+				<ServerListItem title={'Servidor de hml'}/>
+				<ServerListItem title={'Servidor de prod'}/>
+				<ServerListItem title={'Servidor local'} />
+				<ServerListItem title={'Servidor de prod'}/>
+
 			</Menu>
 		);
 	}

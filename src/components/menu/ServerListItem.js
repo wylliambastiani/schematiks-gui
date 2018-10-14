@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Collapse } from 'reactstrap';
+import Icon from 'react-icons-kit';
+import { caretRight as caret } from 'react-icons-kit/fa';
 
 import './ServerList.css';
 
@@ -18,15 +19,10 @@ import './ServerList.css';
   render () {
     return (
       <div className={'server-list-item'} onClick={this.toggle} >
-        <span className={'server-list-item-title'}>Nome do servidor</span>
-        <Collapse isOpen={this.state.isCollapsed}>
-          <div className={'server-list-item-content'}>
-            <span style={{ display: 'block', fontSize: '12px' }} >Tipo: MSSQL 2016</span>
-            <span style={{ display: 'block', fontSize: '12px' }} >ConnectionString: mssql://localhost/</span>
-            <span style={{ display: 'block', fontSize: '12px' }} >Usuário: SA</span>
-            <span style={{ display: 'block', fontSize: '12px' }} >Ultima snapshot: 10/10/2018</span>
-          </div>
-        </Collapse>
+        <div>
+          <Icon size={16} icon={caret}/>
+          <span className={'server-list-item-title'}>{this.props.title}</span>
+        </div>
       </div>
     );
   }
