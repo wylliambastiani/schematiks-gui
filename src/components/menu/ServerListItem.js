@@ -20,8 +20,10 @@ import './ServerList.css';
     return (
       <div className={'server-list-item'} onClick={this.toggle} >
         <div>
-          <Icon size={16} icon={caret}/>
           <span className={'server-list-item-title'}>{this.props.title}</span>
+          <div className={'server-list-item-icon'}>
+            <Icon size={16} icon={caret}/>
+          </div>
         </div>
       </div>
     );
