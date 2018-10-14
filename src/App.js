@@ -1,18 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { pushRotate as Menu } from 'react-burger-menu';
+import { Icon } from 'react-icons-kit'
+import {square_add} from 'react-icons-kit/ikons/square_add'
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div id="root-container">
+        <Menu
+          pageWrapId={"main-content-wrapper"}
+          outerContainerId={"root-container"}
+          customCrossIcon={false} >
+          
+          <div id="side-menu-header">
+              <span id="side-menu-header-title">Schematiks</span>
+            
+              <Icon id="side-menu-header-add-icon" size={16} icon={square_add}/>
+          </div>
+        </Menu>
+
+        <main id="main-content-wrapper">
+
+        </main>
       </div>
     );
   }
