@@ -71,13 +71,6 @@
   font-weight: bolder;
 }
 
-#side-menu-header-add-icon {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 5px;
-}
-
 .server-list-item {
   line-height: 40px;
 }

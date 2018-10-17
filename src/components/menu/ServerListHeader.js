@@ -9,9 +9,6 @@ class ServerListHeader extends Component {
     return (
       <div>
         <div id="side-menu-header">
-          <div id="side-menu-header-add-icon">
-            <Icon size={16} icon={square_add} />
-          </div>
         </div>
       </div>
     );
