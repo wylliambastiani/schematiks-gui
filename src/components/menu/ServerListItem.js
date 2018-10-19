@@ -6,25 +6,14 @@ import './ServerList.css';
 
   class ServerListItem extends Component {
 
-  constructor (props) {
-		super(props);
-		this.toggle = this.toggle.bind(this);
-		this.state = { isSelected: false };
-	}
-
-	toggle() {
-		this.setState({
-      isSelected: !this.state.isSelected
-    });
-  }
-  
   render () {
-    let itemStyleClassName = 'server-list-item';
+    const { isSelectedOnMenu } = this.props;
+    let itemStyleClassName = isSelectedOnMenu? 'server-list-item-selected' : 'server-list-item';
       
     return (
-      <div className={itemStyleClassName} onClick={this.toggle} >
+      <div className={itemStyleClassName} onClick={this.props.onClick} >
         <div>
-          <span className={'server-list-item-title'}>{this.props.title}</span>
+          <span className={'server-list-item-title'}>{this.props.serverName}</span>
           <div className={'server-list-item-icon'}>
             <Icon size={16} icon={caret}/>
           </div>
@@ -33,5 +22,6 @@ import './ServerList.css';
     );
   }
 }
+
 
 export default ServerListItem;
