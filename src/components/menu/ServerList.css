@@ -87,6 +87,8 @@
 .server-list-item-title {
   margin-left: 10px;
   font-size: smaller;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .server-list-item-icon {
