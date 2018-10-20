@@ -15,7 +15,7 @@ class ServerList extends Component {
 				pageWrapId={this.props.pageWrapId}
 				outerContainerId={this.props.outerContainerId}
 				customCrossIcon={false} 
-				isOpen={true} >
+				isOpen={this.props.menuState.isMenuOpen} >
 			
 				<ServerListHeader/>
 
@@ -41,7 +41,10 @@ class ServerList extends Component {
 }
 
 const mapStateToProps = state => {
-  return { servers: state.serverList };
+  return { 
+		servers: state.serverList,
+		menuState: state.menuState
+	};
 }
 
 const mapDispatchToProps = dispatch => {
