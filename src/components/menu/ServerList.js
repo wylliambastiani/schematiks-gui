@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import { connect } from 'react-redux';	
 import { pushRotate as Menu } from 'react-burger-menu';
 import ServerListHeader from './ServerListHeader';
 import ServerListItem from './ServerListItem';
@@ -35,6 +35,7 @@ class ServerList extends Component {
 				}
 				</div>
 
+				<a href="#" className={'teste'}>Adicionar Servidor</a>
 			</Menu>
 		);
 	}

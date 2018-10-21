@@ -28,6 +28,8 @@
 .bm-menu {
   background: #ffffff;
   font-size: 1.15em;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -37,10 +39,6 @@
 
 /* Wrapper for item list */
 .bm-item-list {
-}
-
-.bm-item-list > nav {
-  height: auto;
 }
 
 /* Individual item */
@@ -53,8 +51,13 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
+#side-menu-header-wrapper {
+  height: 100px;
+}
+
 #side-menu-header {
-  position: relative;
+  position: fixed;
+  width: 300px;
   height: 100px;
   background-color: #2D3E50;
   background-image: url('./schematiks-logo.png');
@@ -94,4 +97,11 @@
 .server-list-item-icon {
   display: inline;
   float: right;
+}
+
+.teste {
+  width: 300px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
 }

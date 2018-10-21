@@ -31,7 +31,47 @@ let initialServerListState =
       id: 6,
       name: 'Servidor de PROD 2',
       isSelectedOnMenu: false
-    }
+    },
+    {
+      id: 7,
+      name: 'Servidor de DEV',
+      isSelectedOnMenu: false
+    },
+    {
+      id: 8,
+      name: 'Servidor de DEV 2',
+      isSelectedOnMenu: false
+    },
+    {
+      id: 9,
+      name: 'Servidor de HML',
+      isSelectedOnMenu: false
+    },
+    {
+      id: 10,
+      name: 'Servidor de HML 2',
+      isSelectedOnMenu: false
+    },
+    {
+      id: 11,
+      name: 'Servidor de PROD',
+      isSelectedOnMenu: false
+    },
+    {
+      id: 12,
+      name: 'Servidor de PROD 2',
+      isSelectedOnMenu: false
+    },
+    {
+      id: 13,
+      name: 'Servidor de PROD',
+      isSelectedOnMenu: false
+    },
+    {
+      id: 14,
+      name: 'Servidor de PROD 2',
+      isSelectedOnMenu: false
+    },
   ];
 
 export const serverReducer = (state = initialServerListState, action) => {
