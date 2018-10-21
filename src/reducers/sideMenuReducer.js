@@ -1,5 +1,5 @@
 
-export const sideMenuReducer = (state = { isMenuOpen: false }, action) => {
+export const sideMenuReducer = (state = { isMenuOpen: true }, action) => {
 
   switch (action.type) {
     case 'SELECTED_SERVER_ON_MENU':

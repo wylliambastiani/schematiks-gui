@@ -69,7 +69,7 @@ let initialServerListState =
     },
     {
       id: 14,
-      name: 'Servidor de PROD 2',
+      name: 'Servidor de PROD 2 vrau',
       isSelectedOnMenu: false
     },
   ];

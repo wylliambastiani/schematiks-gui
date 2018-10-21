@@ -19,11 +19,11 @@ class ServerList extends Component {
 			
 				<ServerListHeader/>
 
-				<div>				
+				<div id="server-list">				
 				{
 					servers.map((s, i) => {
 						return( 
-								<ServerListItem  
+							<ServerListItem  
 								key={i}
 								serverId={s.id}					
 								serverName={s.name} 
@@ -35,7 +35,10 @@ class ServerList extends Component {
 				}
 				</div>
 
-				<a href="#" className={'teste'}>Adicionar Servidor</a>
+				{/* <a href="#" className={'teste'}>Adicionar Servidor</a> */}
+				<div id="footer">
+					<input type="button" value="Adicionar Servidor" />
+				</div>
 			</Menu>
 		);
 	}
