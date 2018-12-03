@@ -25,6 +25,8 @@ createWindow = () => {
 			: `file://${path.join(__dirname, '../build/index.html')}`,
 	);
 
+	// mainWindow.setMenu(null);
+
 	if (isDev) {
 		const {
 			default: installExtension,

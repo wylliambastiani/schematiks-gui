@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Sidebar from './sidebar';
+import Home from './home';
 
 import './App.css';
 
@@ -8,6 +9,10 @@ class App extends Component {
     return (
       <div id="root-container">
         <Sidebar />
+        
+        <main>
+          <Home />
+        </main>
       </div>
     );
   }
