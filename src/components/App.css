@@ -20,6 +20,6 @@ main {
   width: 100%;
   background-image: url('../assets/images/wallpaper-home.png');
   background-repeat: no-repeat;
-  background-size: 80% 80%;
+  background-size: contain;
   background-position: center center;
 }
