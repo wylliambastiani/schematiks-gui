@@ -6,10 +6,18 @@ body {
 main {
   width: 100%;
   height: 100%;
-  margin-left: 60px;
+  margin-left: 48px;
 }
 
 /* Sidebar Component Styles */
+#boomers-menu-icon-area {
+  min-width: 48px;
+}
+
+#boomers-menu-icon-area ul li {
+  font-size: 25px;
+}
+
 #boomers-menu-icon-area ul li:hover {
   color: #f4ab5d;
 }
