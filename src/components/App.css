@@ -31,3 +31,23 @@ main {
   background-size: contain;
   background-position: center center;
 }
+
+/* Add Server Page Component */
+#add-server-page {
+  background-color: white;
+  height: 100%;
+}
+
+#add-server-form {
+  height: 80%;
+  width: 50%;
+  margin: auto;
+}
+
+#add-server-form-title {
+  display: block;
+  margin-bottom: 65px;
+  font-size: 25px;
+  text-align: center;
+}
+

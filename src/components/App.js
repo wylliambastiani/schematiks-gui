@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import Home from './Home';
 import AddServerPage from './AddServer/AddServerPage';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 class App extends Component {
