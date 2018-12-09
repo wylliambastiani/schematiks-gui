@@ -6,7 +6,7 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const AddServerPage = () => {
   return (
-    <div id="add-server-page" class="d-flex align-items-center">
+    <div id="add-server-page" className="d-flex align-items-center">
       <div id="add-server-form">
         <label id="add-server-form-title">Add New Server</label>
 
@@ -18,16 +18,35 @@ const AddServerPage = () => {
 
           <FormGroup>
             <Row>
-              <Col xs="12" md="6" lg="6" >
+              <Col>
                 <Label for="host">Host:</Label>
                 <Input type="text" name="host" id="host" placeholder="Ex: 127.0.0.1" />
               </Col>
               
-              <Col xs="12" md="6" lg="6" >
+              <Col>
                 <Label for="port">Port:</Label>
                 <Input type="number" name="port" id="port" placeholder="Ex: 1234"/>
               </Col>
             </Row>
+          </FormGroup>
+
+          <FormGroup>
+            <Row>
+              <Col>
+                <Label for="User">User:</Label>
+                <Input type="text" name="user" id="user" placeholder="Ex: SA" />
+              </Col>
+              
+              <Col>
+                <Label for="Password">Password:</Label>
+                <Input type="password" name="password" id="password" placeholder="********" />
+              </Col>
+            </Row>
+          </FormGroup>
+
+          <FormGroup id="add-server-form-actions" className="float-right">
+            <Button color="info">Test</Button>
+            <Button color="success">Save</Button>
           </FormGroup>
 
         </Form>
