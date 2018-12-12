@@ -35,7 +35,7 @@ main {
 /* Add Server Page Component */
 #add-server-page {
   background-color: white;
-  height: 100%;
+  min-height: 100%;
 }
 
 #add-server-form {
@@ -47,8 +47,25 @@ main {
 #add-server-form-title {
   display: block;
   margin-bottom: 65px;
-  font-size: 25px;
+  font-size: 40px;
   text-align: center;
+}
+
+#add-server-form .icons-container {
+  text-align: center;
+}
+
+#add-server-form .iconButton {
+  width: 60px;
+  height: 40px;
+  background: none;
+  margin-right: 10px;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+#add-server-form .iconButton:hover {
+  background-color: #f4ab5d;
 }
 
 #add-server-form-actions {
@@ -59,3 +76,4 @@ main {
   margin-left: 10px;
   width: 80px;
 }
+
