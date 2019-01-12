@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
-import Sidebar from './sidebar';
-import Home from './home';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import Sidebar from './Sidebar';
+import Home from './Home';
+import AddServerPage from './AddServer/AddServerPage';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div id="root-container">
-        <Sidebar />
-        
-        <main>
-          <Home />
-        </main>
-      </div>
+      <Router>
+        <div id="root-container">
+          <Sidebar />
+          <main>
+            <Route path="/" exact component={Home} />
+            <Route path="/add-server" exact component={AddServerPage} />
+          </main>
+        </div>
+      </Router>
+
     );
   }
 }
